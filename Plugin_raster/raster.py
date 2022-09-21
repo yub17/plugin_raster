@@ -16,3 +16,8 @@ class interfaz (QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_ModuloRaster
         self.ui.setupUi(self)
+
+        self.ui.btn4.clicked.connect(self.cerrar)
+
+    def cerrar(self):
+        self.close()
